@@ -62,13 +62,10 @@ dtparam=audio=on
 [pi4]
 # Enable DRM VC4 V3D driver on top of the dispmanx display stack
 # dtoverlay=vc4-fkms-v3d
-# NON-DEFAULT SETTINGS
 max_framebuffers=2
-max_framebuffers=2
-hdmi_force_hotplug:0=1
-#hdmi_safe=1
-hdmi_group:0=1
-hdmi_mode:0=4
+#hdmi_force_hotplug=1
+hdmi_group=2
+hdmi_mode=85
 
 [all]
 #dtoverlay=vc4-fkms-v3d
