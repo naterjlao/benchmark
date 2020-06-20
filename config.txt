@@ -7,7 +7,7 @@
 
 # uncomment this if your display has a black border of unused pixels visible
 # and your display can output without overscan
-#disable_overscan=1
+disable_overscan=1
 
 # uncomment the following to adjust overscan. Use positive numbers if console
 # goes off screen, and negative if there is too much border
@@ -25,8 +25,8 @@
 hdmi_force_hotplug=1
 
 # uncomment to force a specific HDMI mode (this will force VGA)
-#hdmi_group=1
-#hdmi_mode=1
+hdmi_group=1
+hdmi_mode=16
 
 # uncomment to force a HDMI mode rather than DVI. This can make audio work in
 # DMT (computer monitor) modes
@@ -34,13 +34,16 @@ hdmi_force_hotplug=1
 
 # uncomment to increase signal to HDMI, if you have interference, blanking, or
 # no display
-config_hdmi_boost=4
+config_hdmi_boost=9
 
 # uncomment for composite PAL
 #sdtv_mode=2
 
 #uncomment to overclock the arm. 700 MHz is the default.
 #arm_freq=800
+over_voltage=6
+arm_freq=2147
+gpu_freq=750
 
 # Uncomment some or all of these to enable the optional hardware interfaces
 #dtparam=i2c_arm=on
@@ -60,8 +63,8 @@ dtparam=audio=on
 # Enable DRM VC4 V3D driver on top of the dispmanx display stack
 dtoverlay=vc4-fkms-v3d
 max_framebuffers=2
-hdmi_group=2
-hdmi_mode=35
+hdmi_group=1
+hdmi_mode=16
 
 [all]
 #dtoverlay=vc4-fkms-v3d
